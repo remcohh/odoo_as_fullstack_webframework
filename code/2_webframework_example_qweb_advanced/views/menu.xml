@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem
+        id="menu_root"
+        name="Example 1 Bookstore"
+        sequence="10"
+    />
+</odoo>

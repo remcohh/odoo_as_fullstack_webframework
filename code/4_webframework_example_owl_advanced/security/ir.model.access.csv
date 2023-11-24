@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+applicant_journey_user,applicant_journey_user,1_webframework_example_qweb_basic.model_webframework_example_qweb_basic_book,base.group_user,1,1,1,1

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_book_form" model="ir.ui.view">
+        <field name="name">Books form</field>
+        <field name="model">webframework_example_qweb_basic.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="title"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_book_tree" model="ir.ui.view">
+        <field name="name">Books tree</field>
+        <field name="model">webframework_example_qweb_basic.book</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_books" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">webframework_example_qweb_basic.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_books"
+        name="Books"
+        sequence="10"
+        action="action_books"
+        parent="menu_root"
+    />
+</odoo>
